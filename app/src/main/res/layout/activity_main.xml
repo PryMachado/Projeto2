@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/imc_" />
+
+    <EditText
+
+
+
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        android:id="@+id/edittext_Peso"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Digite seu Peso"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+        tools:ignore="SmallSp"
+
+        />
+
+    <EditText
+
+        android:textColor="@color/purple_500"
+        android:textColorHint="@color/purple_500"
+        tools:ignore="SmallSp"
+        android:id="@+id/edittext_Altura"
+        android:layout_below="@+id/edittext_Peso"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Digite sua altura"
+        android:inputType="numberDecimal"
+        android:maxLength="6"
+
+         />
+
+
+
+ <Button
+
+     android:textColorLink="@color/purple_500"
+     android:textColor="@color/purple_500"
+     android:textColorHint="@color/purple_500"
+     android:id="@+id/btnCalcular"
+     android:text="CALCULAR"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentBottom="true"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
